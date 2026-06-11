@@ -5,6 +5,7 @@ import AdminLoginView from '../views/admin/AdminLoginView.vue'
 import AdminDashboardView from '../views/admin/AdminDashboardView.vue'
 import AdminResultsView from '../views/admin/AdminResultsView.vue'
 import AdminCertificatesView from '../views/admin/AdminCertificatesView.vue'
+import NotFoundView from '../views/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -33,6 +34,12 @@ const router = createRouter({
       path: '/admin/certificates',
       component: AdminCertificatesView,
       meta: { requiresAuth: true, title: 'Çertifikatat — Admin' },
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: NotFoundView,
+      meta: { title: '404 — Faqja nuk u gjet' },
     },
   ],
 })
