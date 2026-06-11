@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  /* Light theme derived from the brand logo: cream background, dark ink text */
+  --color-base: #f3efe2;
+  --color-surface: #ebe6d4;
+  --color-surface2: #e2dcc6;
+  --color-accent: #262214;
+  --color-accent-dim: #7a7257;
+  --color-primary: #16140d;
+  --color-muted: #6f6a5a;
+  --color-line: rgba(0, 0, 0, 0.1);
+  --color-cream: #f3efe2;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-primary);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

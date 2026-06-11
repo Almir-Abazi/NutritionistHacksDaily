@@ -1,0 +1,23 @@
+# Internal docs — not part of the public repo
+docs/
+
+# Dependencies & build output
+node_modules/
+dist/
+target/
+
+# Runtime data
+uploads/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
